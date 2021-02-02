@@ -14,9 +14,7 @@
       }
     }
   });
-//Use JQuery to change my details section
-  $("#me h4").html('Timophey')
-  $("#me img").attr("src","img/MyPic.jpg")
+
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
