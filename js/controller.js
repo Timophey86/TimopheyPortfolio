@@ -79,4 +79,17 @@ function renderModal(projId) {
     console.log($($(".modal-section").html(strHTML)));
 }
 
+$(".submit-mail").click(onSubmitMail)
 
+function onSubmitMail () {
+  var elContent = $("#content").val()
+  var elSubject = $("#subject").val()
+  var elName = $("#name").val()
+  console.log(elSubject);
+  console.log(elName)
+  console.log(elContent)
+  window.open(` https://mail.google.com/mail/?view=cm&fs=1&to=tima121212@gmail.com&su=${elName}+${elSubject}&body=${elContent}`)
+  $('#content').attr("placeholder","Write something");
+  $('#subject').attr("placeholder","The topic of your message");
+  $('#name').attr("placeholder","Your name")
+}
